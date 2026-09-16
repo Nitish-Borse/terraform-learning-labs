@@ -4,7 +4,6 @@
 *.tfstate.*
 crash.log
 crash.*.log
-.terraform.lock.hcl
 
 # Local Terraform variables / secrets
 terraform.tfvars
