@@ -1,0 +1,4 @@
+region_name            = "us-east-1"
+ami                    = "YOUR_AMI_ID"
+instance_type          = "t3.micro"
+vpc_security_group_id  = "YOUR_SECURITY_GROUP_ID"
