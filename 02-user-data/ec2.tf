@@ -4,14 +4,13 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = [var.vpc_security_group_id]
 
   user_data = <<-EOF
-    #!/bin/bash
-    apt-get update -y
-    apt-get install -y nginx
-    systemctl enable nginx
-    systemctl start nginx
-    echo "Hello from Terraform User Data" > /var/www/html/index.html
-  EOF
-
+  #!/bin/bash
+  apt-get update -y
+  apt-get install -y nginx
+  systemctl enable nginx
+  systemctl start nginx
+  echo "Hello from Terraform User Data" > /var/www/html/index.html
+EOF
   tags = {
     Name = "terraform-user-data-web"
   }
